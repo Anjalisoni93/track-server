@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-const mongoUri = 'mongodb+srv://admin:Pooja@1993@cluster0.jpgo7is.mongodb.net/?retryWrites=true&w=majority'
+const mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0.bu4mnvm.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(mongoUri);
 
 mongoose.connection.on('connected', () => {
