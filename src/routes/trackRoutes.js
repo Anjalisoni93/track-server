@@ -14,4 +14,12 @@ router.get('/tracks', async (req, res) => {
   res.send(tracks);
 });
 
+router.post('/tracks', async (req, res) => {
+  const { names, locations } = req.body;
+
+  if (!name || !locations) {
+    return res.status(422).send({ error: 'You must provide a name and locations' });
+  }
+});
+
 module.exports = router;
